@@ -8,8 +8,9 @@ function takeANumber(array,name){
 
 function nowServing(array){
   if(array.length >0){
-    return `Currently serving ${array[0]}.`;
-    array.shift(0)
+    var announcement = `Currently serving ${array[0]}.`;
+    array.shift()
+    return announcement
   }
   else{
   return "There is nobody waiting to be served!"
