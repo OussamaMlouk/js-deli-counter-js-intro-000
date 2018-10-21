@@ -7,15 +7,15 @@ function takeANumber(array,name){
 
 
 function nowServing(array){
-  if(array.length === 0){
-    return "There is nobody waiting to be served!"
+  if(array.length >0){
+    return `Currently serving ${array[0]}.`
+    function shift(array){
+      array.shift()
+    }
+    shift(array)  
   }
   else{
-  return `Currently serving ${array[0]}.`
-  function shift(array){
-    array.shift()
-  }
-  shift(array)
+  return "There is nobody waiting to be served!"
   }
 }
 
