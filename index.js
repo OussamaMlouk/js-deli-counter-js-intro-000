@@ -25,17 +25,18 @@ function currentLine(array){
   else if (array.length === 1){
     return `Currently serving ${array[0]}`
   }
-  else{let i = 0
-    while(i<array.length){
-      var position = `${i+1}. ${array[i]}`
-      i++
-      var list = `${position}`
-    }
-    return `The line is currently: ${list}`
-  }}
-
-    //for(let i=0; i<array.length; i++){
-      //var list = `${i+1}. ${array[i]}`
+  else{//let i = 0
+  //  while(i<array.length){
+    //  var position = `${i+1}. ${array[i]}`
+  //    i++
+      //var list = `${position}`
     //}
+    //return `The line is currently: ${list}`
+  //}}
+
+    for(let i=0; i<array.length; i++){
+      var list = `${i+1}. ${array[i]}`
+      list += `${i+1}. ${array[i]}`
+    }}
     //return `The line is currently: ${list}`
   //}}
