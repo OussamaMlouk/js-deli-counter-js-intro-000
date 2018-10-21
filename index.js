@@ -4,22 +4,20 @@ function takeANumber(array,name){
   return `Welcome, ${name}. You are number ${position} in line.`
 }
 
+function shift(array){
+  array.shift()
+}
+
 function nowServing(array){
   if(array.length === 0){
     return "There is nobody waiting to be served!"
   }
   else{
   return `Currently serving ${array[0]}.`
-  array.shift()
+  shift(array)
   }
 }
 
-function list(array){
-  for(i=0;i<array.length;i++){
-    text= `${i+1}.` + array[i] 
-  }
-  return text
-}
 
 function currentLine(array){
   if(array.length === 0){
