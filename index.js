@@ -4,9 +4,7 @@ function takeANumber(array,name){
   return `Welcome, ${name}. You are number ${position} in line.`
 }
 
-function shift(array){
-  array.shift()
-}
+
 
 function nowServing(array){
   if(array.length === 0){
@@ -14,6 +12,9 @@ function nowServing(array){
   }
   else{
   return `Currently serving ${array[0]}.`
+  function shift(array){
+    array.shift()
+  }
   shift(array)
   }
 }
